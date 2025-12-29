@@ -1,0 +1,11 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=771553b7fe4587840a7e80e3620b6ade&amp;type=3#MainMenuStyle" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/PlaceHolderArt/Gemini_Generated_Image_v4kx5ov4kx5ov4kx.png?fileID=2800000&amp;guid=c5eb24f013d9c4a4b8779187fce8baaa&amp;type=3#Gemini_Generated_Image_v4kx5ov4kx5ov4kx&quot;); background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement style="flex-grow: 1; position: absolute; top: 493px; left: 702px; align-items: center; align-self: center; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Creepster-Regular.ttf?fileID=12800000&amp;guid=6fc664735c4d3fc49ac7736c78d9d384&amp;type=3#Creepster-Regular&quot;); color: rgb(255, 255, 255);">
+            <ui:Label text="Necromancer" class="header" />
+            <ui:Button text="Start" name="StartGameButton" class="button" style="margin-top: 100px;" />
+            <ui:Button text="Settings" name="SettingsButton" class="button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ToggleContainer" style="flex-grow: 1; position: absolute; background-image: url(&quot;project://database/Assets/UI%20Toolkit/UI%20Assets/toggle%20left.png?fileID=2800000&amp;guid=02be0a1f1f727a0429b1687e77426222&amp;type=3#toggle left&quot;); height: 78px; width: 147px; top: 968px; left: 1740px;" />
+    </ui:VisualElement>
+</ui:UXML>

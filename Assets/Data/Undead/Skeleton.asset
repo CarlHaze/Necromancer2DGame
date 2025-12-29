@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b440850c4c95414e9744e26155ce6d4, type: 3}
+  m_Name: Skeleton
+  m_EditorClassIdentifier: Assembly-CSharp::NecromancersRising.Undead.UndeadData
+  undeadName: Skeleton
+  type: 0
+  description: A reliable skeletal warrior. Balanced stats make it a good all-rounder.
+  baseHP: 100
+  baseAttack: 12
+  baseDefense: 13
+  baseSpeed: 10
+  baseAccuracy: 95
+  moves:
+  - {fileID: 11400000, guid: 177e0b85f54a70147944c21172972cf1, type: 2}
+  canEvolve: 0
+  evolveLevel: 0
+  sprite: {fileID: 0}

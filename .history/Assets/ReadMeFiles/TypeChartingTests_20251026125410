@@ -1,0 +1,103 @@
+=== STARTING TYPE CHART TESTS ===
+UnityEngine.Debug:Log (object)
+TypeChartTester:Start () (at Assets/Scripts/Combat/TypeChartTester.cs:13)
+
+--- Testing Super Effective Matchups ---
+UnityEngine.Debug:Log (object)
+TypeChartTester:TestSuperEffective () (at Assets/Scripts/Combat/TypeChartTester.cs:35)
+TypeChartTester:RunAllTests () (at Assets/Scripts/Combat/TypeChartTester.cs:21)
+TypeChartTester:Start () (at Assets/Scripts/Combat/TypeChartTester.cs:14)
+
+PASS: Infernal vs Frost = 2x (Expected: 2x)
+UnityEngine.Debug:Log (object)
+TypeChartTester:LogTest (string,single,single) (at Assets/Scripts/Combat/TypeChartTester.cs:105)
+TypeChartTester:TestSuperEffective () (at Assets/Scripts/Combat/TypeChartTester.cs:39)
+TypeChartTester:RunAllTests () (at Assets/Scripts/Combat/TypeChartTester.cs:21)
+TypeChartTester:Start () (at Assets/Scripts/Combat/TypeChartTester.cs:14)
+
+PASS: Frost vs Plague = 2x (Expected: 2x)
+UnityEngine.Debug:Log (object)
+TypeChartTester:LogTest (string,single,single) (at Assets/Scripts/Combat/TypeChartTester.cs:105)
+TypeChartTester:TestSuperEffective () (at Assets/Scripts/Combat/TypeChartTester.cs:43)
+TypeChartTester:RunAllTests () (at Assets/Scripts/Combat/TypeChartTester.cs:21)
+TypeChartTester:Start () (at Assets/Scripts/Combat/TypeChartTester.cs:14)
+
+PASS: Soul vs Dark = 2x (Expected: 2x)
+UnityEngine.Debug:Log (object)
+TypeChartTester:LogTest (string,single,single) (at Assets/Scripts/Combat/TypeChartTester.cs:105)
+TypeChartTester:TestSuperEffective () (at Assets/Scripts/Combat/TypeChartTester.cs:47)
+TypeChartTester:RunAllTests () (at Assets/Scripts/Combat/TypeChartTester.cs:21)
+TypeChartTester:Start () (at Assets/Scripts/Combat/TypeChartTester.cs:14)
+
+PASS: Soul vs Spirit = 2x (Expected: 2x)
+UnityEngine.Debug:Log (object)
+TypeChartTester:LogTest (string,single,single) (at Assets/Scripts/Combat/TypeChartTester.cs:105)
+TypeChartTester:TestSuperEffective () (at Assets/Scripts/Combat/TypeChartTester.cs:51)
+TypeChartTester:RunAllTests () (at Assets/Scripts/Combat/TypeChartTester.cs:21)
+TypeChartTester:Start () (at Assets/Scripts/Combat/TypeChartTester.cs:14)
+
+--- Testing Not Very Effective Matchups ---
+UnityEngine.Debug:Log (object)
+TypeChartTester:TestNotEffective () (at Assets/Scripts/Combat/TypeChartTester.cs:59)
+TypeChartTester:RunAllTests () (at Assets/Scripts/Combat/TypeChartTester.cs:24)
+TypeChartTester:Start () (at Assets/Scripts/Combat/TypeChartTester.cs:14)
+
+PASS: Spirit vs Bone = 0.5x (Expected: 0.5x)
+UnityEngine.Debug:Log (object)
+TypeChartTester:LogTest (string,single,single) (at Assets/Scripts/Combat/TypeChartTester.cs:105)
+TypeChartTester:TestNotEffective () (at Assets/Scripts/Combat/TypeChartTester.cs:63)
+TypeChartTester:RunAllTests () (at Assets/Scripts/Combat/TypeChartTester.cs:24)
+TypeChartTester:Start () (at Assets/Scripts/Combat/TypeChartTester.cs:14)
+
+PASS: Infernal vs Plague = 0.5x (Expected: 0.5x)
+UnityEngine.Debug:Log (object)
+TypeChartTester:LogTest (string,single,single) (at Assets/Scripts/Combat/TypeChartTester.cs:105)
+TypeChartTester:TestNotEffective () (at Assets/Scripts/Combat/TypeChartTester.cs:67)
+TypeChartTester:RunAllTests () (at Assets/Scripts/Combat/TypeChartTester.cs:24)
+TypeChartTester:Start () (at Assets/Scripts/Combat/TypeChartTester.cs:14)
+
+PASS: Bone vs Feral = 0.5x (Expected: 0.5x)
+UnityEngine.Debug:Log (object)
+TypeChartTester:LogTest (string,single,single) (at Assets/Scripts/Combat/TypeChartTester.cs:105)
+TypeChartTester:TestNotEffective () (at Assets/Scripts/Combat/TypeChartTester.cs:71)
+TypeChartTester:RunAllTests () (at Assets/Scripts/Combat/TypeChartTester.cs:24)
+TypeChartTester:Start () (at Assets/Scripts/Combat/TypeChartTester.cs:14)
+
+PASS: Dark vs Spirit = 0.5x (Expected: 0.5x)
+UnityEngine.Debug:Log (object)
+TypeChartTester:LogTest (string,single,single) (at Assets/Scripts/Combat/TypeChartTester.cs:105)
+TypeChartTester:TestNotEffective () (at Assets/Scripts/Combat/TypeChartTester.cs:75)
+TypeChartTester:RunAllTests () (at Assets/Scripts/Combat/TypeChartTester.cs:24)
+TypeChartTester:Start () (at Assets/Scripts/Combat/TypeChartTester.cs:14)
+
+--- Testing Neutral Matchups ---
+UnityEngine.Debug:Log (object)
+TypeChartTester:TestNeutral () (at Assets/Scripts/Combat/TypeChartTester.cs:83)
+TypeChartTester:RunAllTests () (at Assets/Scripts/Combat/TypeChartTester.cs:27)
+TypeChartTester:Start () (at Assets/Scripts/Combat/TypeChartTester.cs:14)
+
+PASS: Bone vs Plague = 1x (Expected: 1x)
+UnityEngine.Debug:Log (object)
+TypeChartTester:LogTest (string,single,single) (at Assets/Scripts/Combat/TypeChartTester.cs:105)
+TypeChartTester:TestNeutral () (at Assets/Scripts/Combat/TypeChartTester.cs:87)
+TypeChartTester:RunAllTests () (at Assets/Scripts/Combat/TypeChartTester.cs:27)
+TypeChartTester:Start () (at Assets/Scripts/Combat/TypeChartTester.cs:14)
+
+PASS: Hex vs Bone = 1x (Expected: 1x)
+UnityEngine.Debug:Log (object)
+TypeChartTester:LogTest (string,single,single) (at Assets/Scripts/Combat/TypeChartTester.cs:105)
+TypeChartTester:TestNeutral () (at Assets/Scripts/Combat/TypeChartTester.cs:91)
+TypeChartTester:RunAllTests () (at Assets/Scripts/Combat/TypeChartTester.cs:27)
+TypeChartTester:Start () (at Assets/Scripts/Combat/TypeChartTester.cs:14)
+
+PASS: Blight vs Spirit = 1x (Expected: 1x)
+UnityEngine.Debug:Log (object)
+TypeChartTester:LogTest (string,single,single) (at Assets/Scripts/Combat/TypeChartTester.cs:105)
+TypeChartTester:TestNeutral () (at Assets/Scripts/Combat/TypeChartTester.cs:95)
+TypeChartTester:RunAllTests () (at Assets/Scripts/Combat/TypeChartTester.cs:27)
+TypeChartTester:Start () (at Assets/Scripts/Combat/TypeChartTester.cs:14)
+
+=== TYPE CHART TESTS COMPLETE ===
+UnityEngine.Debug:Log (object)
+TypeChartTester:Start () (at Assets/Scripts/Combat/TypeChartTester.cs:15)
+
