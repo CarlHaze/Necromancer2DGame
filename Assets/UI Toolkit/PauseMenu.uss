@@ -1,0 +1,27 @@
+:root {
+}
+
+.button {
+    width: 250px;
+    height: 100px;
+    -unity-font-definition: url("project://database/Assets/Fonts/Creepster-Regular.ttf?fileID=12800000&guid=6fc664735c4d3fc49ac7736c78d9d384&type=3#Creepster-Regular");
+    font-size: 45px;
+    align-self: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-image: url("project://database/Assets/UI%20Toolkit/UI%20Assets/button%20wide%20idle.png?fileID=2800000&guid=9792d947928da9f4c88ec0a49d2f0e0b&type=3#button wide idle");
+}
+
+.header {
+    align-self: center;
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    -unity-font-definition: url("project://database/Assets/Fonts/Creepster-Regular.ttf?fileID=12800000&guid=6fc664735c4d3fc49ac7736c78d9d384&type=3#Creepster-Regular");
+}
+
+.button:hover {
+    background-image: url("project://database/Assets/UI%20Toolkit/UI%20Assets/button%20wide%20hover.png?fileID=2800000&guid=18b0bbddfa501274997ffaba30d68048&type=3#button wide hover");
+}

@@ -150,6 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0816bdc543f92d34f8c2f00fa966edef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuEvents
+  gameSceneName: SampleScene
+  sceneTransitionDelay: 0.5
 --- !u!114 &602200766
 MonoBehaviour:
   m_ObjectHideFlags: 0

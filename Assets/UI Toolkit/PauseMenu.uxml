@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/PauseMenu.uss?fileID=7433441132597879392&amp;guid=59f8dcb5361959949acc97320a783819&amp;type=3#PauseMenu" />
+    <ui:VisualElement name="PauseMenuContainer" style="flex-grow: 1; background-color: rgba(51, 0, 94, 0.86); justify-content: center; align-self: auto; align-content: center;">
+        <ui:VisualElement name="MenuContainer" style="flex-grow: 1; width: 500px; height: 500px; top: 256px; left: 740px; right: 681px; bottom: 325px; position: absolute; align-self: center; background-color: rgba(0, 0, 0, 0.38);">
+            <ui:Label text="Necromancer" class="header" />
+            <ui:Button text="Resume" name="ResumeButton" class="button" style="margin-top: 50px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
