@@ -127,9 +127,9 @@
             
             <!-- Item Page -->
             <ui:VisualElement name="ItemPage" style="flex-grow: 1; display: none;">
-               <ui:VisualElement style="flex-direction: row; margin-bottom: 20px; margin-top: 10px; flex-shrink: 0; height: 40px; align-items: center;">
-                    <ui:VisualElement name="BackButton" class="back-button-icon" style="width: 50px; height: 50px; background-image: url('project://database/Assets/UI Toolkit/UI Assets/Black/icons arrow left.png'); -unity-background-scale-mode: scale-to-fit; margin-right: 10px; flex-shrink: 0;"/>
-                    <ui:Label text="Items" name="PageTitle" class="font" style="font-size: 20px; -unity-text-align: upper-center; flex-grow: 1; margin-right: 60px;"/>
+                <ui:VisualElement style="flex-direction: row; margin-bottom: 20px; margin-top: 10px; flex-shrink: 0; position: relative; height: 40px; align-items: center;">
+                    <ui:VisualElement name="BackButton" class="back-button-icon" style="position: absolute; left: 0; width: 40px; height: 40px; background-image: url('project://database/Assets/UI Toolkit/UI Assets/Black/icons arrow left.png'); -unity-background-scale-mode: scale-to-fit;"/>
+                    <ui:Label text="Items" name="PageTitle" class="font" style="font-size: 20px; -unity-text-align: upper-center; flex-grow: 1;"/>
                 </ui:VisualElement>
                 
                 <ui:VisualElement name="ItemList" style="flex-grow: 1;">
@@ -139,9 +139,9 @@
             
             <!-- Flee Page -->
             <ui:VisualElement name="FleePage" style="flex-grow: 1; display: none;">
-               <ui:VisualElement style="flex-direction: row; margin-bottom: 20px; margin-top: 10px; flex-shrink: 0; height: 40px; align-items: center;">
-                    <ui:VisualElement name="BackButton" class="back-button-icon" style="width: 50px; height: 50px; background-image: url('project://database/Assets/UI Toolkit/UI Assets/Black/icons arrow left.png'); -unity-background-scale-mode: scale-to-fit; margin-right: 10px; flex-shrink: 0;"/>
-                    <ui:Label text="Escape Spell" name="PageTitle" class="font" style="font-size: 20px; -unity-text-align: upper-center; flex-grow: 1; margin-right: 60px;"/>
+                <ui:VisualElement style="flex-direction: row; margin-bottom: 20px; margin-top: 10px; flex-shrink: 0; position: relative; height: 40px; align-items: center;">
+                    <ui:VisualElement name="BackButton" class="back-button-icon" style="position: absolute; left: 0; width: 40px; height: 40px; background-image: url('project://database/Assets/UI Toolkit/UI Assets/Black/icons arrow left.png'); -unity-background-scale-mode: scale-to-fit;"/>
+                    <ui:Label text="Escape Spell" name="PageTitle" class="font" style="font-size: 20px; -unity-text-align: upper-center; flex-grow: 1;"/>
                 </ui:VisualElement>
                 
                 <ui:VisualElement name="FleeContent" style="flex-grow: 1; justify-content: center;">

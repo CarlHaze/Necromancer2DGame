@@ -82,6 +82,7 @@
     padding-right: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin: 5px;
     align-items: center;
     flex-shrink: 0;
 }
@@ -170,52 +171,13 @@
     -unity-text-align: middle-right;
 }
 
-
-/* Back Button Icon Style */
-.back-button-icon {
-    padding: 5px;
+/* Back Button Style */
+.back-button {
+    padding: 5px 10px;
+    margin-right: 10px;
     flex-shrink: 0;
 }
 
-.back-button-icon:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-    border-radius: 5px;
-}
-
-/* Battle Log Styles */
-.log-message {
-    font-size: 20px;
-    color: rgb(220, 220, 220);
-    padding: 2px 5px;
-    flex-shrink: 0;
-}
-
-.log-action {
-    color: rgb(200, 200, 255);
-}
-
-.log-damage {
-    color: rgb(255, 150, 150);
-}
-
-.log-heal {
-    color: rgb(150, 255, 150);
-}
-
-.log-status {
-    color: rgb(255, 255, 150);
-}
-
-.log-miss {
-    color: rgb(180, 180, 180);
-    -unity-font-style: italic;
-}
-
-.log-critical {
-    color: rgb(255, 100, 100);
-    -unity-font-style: bold;
-}
-
-.log-flee {
-    color: rgb(255, 200, 100);
+.back-button:hover {
+    color: rgb(200, 200, 200);
 }

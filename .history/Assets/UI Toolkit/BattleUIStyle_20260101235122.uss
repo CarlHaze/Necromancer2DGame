@@ -170,7 +170,7 @@
     -unity-text-align: middle-right;
 }
 
-
+/* Back Button Style */
 /* Back Button Icon Style */
 .back-button-icon {
     padding: 5px;

@@ -45,105 +45,83 @@
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
-
         <ui:VisualElement name="GrimoireContainer" style="position: absolute; bottom: 0; left: 50%; translate: -50% 0; width: 500px; height: 400px; background-color: rgba(0, 0, 0, 0.85); border-radius: 5px; padding: 10px; border-width: 2px; border-color: rgba(100, 100, 100, 0.8); margin-bottom: 5px;">
-    
-            <!-- Main Command Page (Index) -->
             <ui:VisualElement name="CommandPage" style="flex-grow: 1; display: flex;">
                 <ui:Label text="Grimoire of Command" name="TitleLabel" class="font" style="font-size: 20px; -unity-text-align: upper-center; margin-bottom: 10px; flex-shrink: 0;"/>
-                
                 <ui:VisualElement name="CommandList" style="flex-grow: 1; flex-direction: column;">
                     <ui:VisualElement name="AttackCommand" class="command-item">
                         <ui:Label text="⚔" name="CommandIcon" class="command-icon-label"/>
                         <ui:Label text="Attack" name="CommandName" class="font command-name"/>
                     </ui:VisualElement>
-                    
                     <ui:VisualElement name="SummonCommand" class="command-item">
                         <ui:Label text="✦" name="CommandIcon" class="command-icon-label"/>
                         <ui:Label text="Summon" name="CommandName" class="font command-name"/>
                     </ui:VisualElement>
-                    
                     <ui:VisualElement name="ItemCommand" class="command-item">
                         <ui:Label text="⚗" name="CommandIcon" class="command-icon-label"/>
                         <ui:Label text="Item" name="CommandName" class="font command-name"/>
                     </ui:VisualElement>
-                    
                     <ui:VisualElement name="FleeCommand" class="command-item">
                         <ui:Label text="☁" name="CommandIcon" class="command-icon-label"/>
                         <ui:Label text="Flee" name="CommandName" class="font command-name"/>
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
-            
-            <!-- Attack Skills Page -->
-            <ui:VisualElement name="AttackPage" style="flex-grow: 1; display: none;">
-               <ui:VisualElement style="flex-direction: row; margin-bottom: 20px; margin-top: 10px; flex-shrink: 0; height: 40px; align-items: center;">
-                    <ui:VisualElement name="BackButton" class="back-button-icon" style="width: 50px; height: 50px; background-image: url('project://database/Assets/UI Toolkit/UI Assets/Black/icons arrow left.png'); -unity-background-scale-mode: scale-to-fit; margin-right: 10px; flex-shrink: 0;"/>
-                    <ui:Label text="Attack Skills" name="PageTitle" class="font" style="font-size: 20px; -unity-text-align: upper-center; flex-grow: 1; margin-right: 60px;"/>
+            <ui:VisualElement name="AttackPage" enabled="true" style="flex-grow: 1; display: none;">
+                <ui:VisualElement style="flex-direction: row; margin-bottom: 10px; flex-shrink: 0;">
+                    <ui:Label text="← Back" name="BackButton" class="font back-button" style="font-size: 18px; position: absolute; left: 0;"/>
+                    <ui:Label text="Attack Skills" name="PageTitle" class="font" style="font-size: 20px; -unity-text-align: upper-center; flex-grow: 1; align-self: center;"/>
                 </ui:VisualElement>
-                
                 <ui:VisualElement name="AttackSkillList" style="flex-grow: 1; flex-direction: column;">
                     <ui:VisualElement name="Skill1" class="skill-item">
-                        <ui:VisualElement name="SkillIcon" class="skill-icon" style="background-image: url('project://database/Assets/PlaceHolderArt/Skulls/basicSkullGrey.png'); -unity-background-scale-mode: scale-to-fit;"/>
+                        <ui:VisualElement name="SkillIcon" class="skill-icon" style="background-image: url(&quot;project://database/Assets/PlaceHolderArt/Skulls/basicSkullGrey.png?fileID=6123531346467591110&amp;guid=30547456e443cc1439211476fb2c46b6&amp;type=3#basicSkullGrey_0&quot;); -unity-background-scale-mode: scale-to-fit;"/>
                         <ui:Label text="Bone Shard" name="SkillName" class="font skill-name"/>
                         <ui:Label text="[Bone]" name="SkillType" class="font skill-type"/>
                         <ui:Label text="5 SP" name="SkillCost" class="font skill-cost"/>
                     </ui:VisualElement>
-                    
                     <ui:VisualElement name="Skill2" class="skill-item">
-                        <ui:VisualElement name="SkillIcon" class="skill-icon" style="background-image: url('project://database/Assets/PlaceHolderArt/Skulls/basicSkullBlue.png'); -unity-background-scale-mode: scale-to-fit;"/>
+                        <ui:VisualElement name="SkillIcon" class="skill-icon" style="background-image: url(&quot;project://database/Assets/PlaceHolderArt/Skulls/basicSkullBlue.png?fileID=1546111035941289287&amp;guid=6c663173e13a9bd4fbd9e9a10032e1fd&amp;type=3#basicSkullBlue_0&quot;); -unity-background-scale-mode: scale-to-fit;"/>
                         <ui:Label text="Shadow Claw" name="SkillName" class="font skill-name"/>
                         <ui:Label text="[Dark]" name="SkillType" class="font skill-type"/>
                         <ui:Label text="6 SP" name="SkillCost" class="font skill-cost"/>
                     </ui:VisualElement>
-                    
                     <ui:VisualElement name="Skill3" class="skill-item">
-                        <ui:VisualElement name="SkillIcon" class="skill-icon" style="background-image: url('project://database/Assets/PlaceHolderArt/Skulls/basicSkullRed.png'); -unity-background-scale-mode: scale-to-fit;"/>
+                        <ui:VisualElement name="SkillIcon" class="skill-icon" style="background-image: url(&quot;project://database/Assets/PlaceHolderArt/Skulls/basicSkullRed.png?fileID=-5289296835903173981&amp;guid=67bffca3c921f2c4cae78485a83247bc&amp;type=3#basicSkullRed_0&quot;); -unity-background-scale-mode: scale-to-fit;"/>
                         <ui:Label text="Putrid Breath" name="SkillName" class="font skill-name"/>
                         <ui:Label text="[Plague]" name="SkillType" class="font skill-type"/>
                         <ui:Label text="8 SP" name="SkillCost" class="font skill-cost"/>
                     </ui:VisualElement>
-                    
                     <ui:VisualElement name="Skill4" class="skill-item">
-                        <ui:VisualElement name="SkillIcon" class="skill-icon" style="background-image: url('project://database/Assets/PlaceHolderArt/Skulls/basicSkullGrey.png'); -unity-background-scale-mode: scale-to-fit;"/>
+                        <ui:VisualElement name="SkillIcon" class="skill-icon" style="background-image: url(&quot;project://database/Assets/PlaceHolderArt/Skulls/basicSkullGrey.png?fileID=6123531346467591110&amp;guid=30547456e443cc1439211476fb2c46b6&amp;type=3#basicSkullGrey_0&quot;); -unity-background-scale-mode: scale-to-fit;"/>
                         <ui:Label text="Grave Touch" name="SkillName" class="font skill-name"/>
                         <ui:Label text="[Dark]" name="SkillType" class="font skill-type"/>
                         <ui:Label text="4 SP" name="SkillCost" class="font skill-cost"/>
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
-            
-            <!-- Summon Page -->
             <ui:VisualElement name="SummonPage" style="flex-grow: 1; display: none;">
-               <ui:VisualElement style="flex-direction: row; margin-bottom: 20px; margin-top: 10px; flex-shrink: 0; height: 40px; align-items: center;">
-                    <ui:VisualElement name="BackButton" class="back-button-icon" style="width: 50px; height: 50px; background-image: url('project://database/Assets/UI Toolkit/UI Assets/Black/icons arrow left.png'); -unity-background-scale-mode: scale-to-fit; margin-right: 10px; flex-shrink: 0;"/>
-                    <ui:Label text="Summon Creature" name="PageTitle" class="font" style="font-size: 20px; -unity-text-align: upper-center; flex-grow: 1; margin-right: 60px;"/>
+                <ui:VisualElement style="flex-direction: row; margin-bottom: 10px; flex-shrink: 0;">
+                    <ui:Label text="← Back" name="BackButton" class="font back-button" style="font-size: 18px; position: absolute; left: 0;"/>
+                    <ui:Label text="Summon Creature" name="PageTitle" class="font" style="font-size: 20px; -unity-text-align: upper-center; flex-grow: 1;"/>
                 </ui:VisualElement>
-                
                 <ui:VisualElement name="SummonList" style="flex-grow: 1;">
                     <ui:Label text="Summon list would go here" class="font" style="margin-top: 50px; -unity-text-align: upper-center;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
-            
-            <!-- Item Page -->
             <ui:VisualElement name="ItemPage" style="flex-grow: 1; display: none;">
-               <ui:VisualElement style="flex-direction: row; margin-bottom: 20px; margin-top: 10px; flex-shrink: 0; height: 40px; align-items: center;">
-                    <ui:VisualElement name="BackButton" class="back-button-icon" style="width: 50px; height: 50px; background-image: url('project://database/Assets/UI Toolkit/UI Assets/Black/icons arrow left.png'); -unity-background-scale-mode: scale-to-fit; margin-right: 10px; flex-shrink: 0;"/>
-                    <ui:Label text="Items" name="PageTitle" class="font" style="font-size: 20px; -unity-text-align: upper-center; flex-grow: 1; margin-right: 60px;"/>
+                <ui:VisualElement style="flex-direction: row; margin-bottom: 10px; flex-shrink: 0;">
+                    <ui:Label text="← Back" name="BackButton" class="font back-button" style="font-size: 18px;"/>
+                    <ui:Label text="Items" name="PageTitle" class="font" style="font-size: 20px; -unity-text-align: upper-center; flex-grow: 1;"/>
                 </ui:VisualElement>
-                
                 <ui:VisualElement name="ItemList" style="flex-grow: 1;">
                     <ui:Label text="Item list would go here" class="font" style="margin-top: 50px; -unity-text-align: upper-center;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
-            
-            <!-- Flee Page -->
             <ui:VisualElement name="FleePage" style="flex-grow: 1; display: none;">
-               <ui:VisualElement style="flex-direction: row; margin-bottom: 20px; margin-top: 10px; flex-shrink: 0; height: 40px; align-items: center;">
-                    <ui:VisualElement name="BackButton" class="back-button-icon" style="width: 50px; height: 50px; background-image: url('project://database/Assets/UI Toolkit/UI Assets/Black/icons arrow left.png'); -unity-background-scale-mode: scale-to-fit; margin-right: 10px; flex-shrink: 0;"/>
-                    <ui:Label text="Escape Spell" name="PageTitle" class="font" style="font-size: 20px; -unity-text-align: upper-center; flex-grow: 1; margin-right: 60px;"/>
+                <ui:VisualElement style="flex-direction: row; margin-bottom: 10px; flex-shrink: 0;">
+                    <ui:Label text="← Back" name="BackButton" class="font back-button" style="font-size: 18px; position: absolute; left: 0;"/>
+                    <ui:Label text="Escape Spell" name="PageTitle" class="font" style="font-size: 20px; -unity-text-align: upper-center; flex-grow: 1;"/>
                 </ui:VisualElement>
-                
                 <ui:VisualElement name="FleeContent" style="flex-grow: 1; justify-content: center;">
                     <ui:Label text="Cast smoke screen to flee from battle?" class="font" style="font-size: 18px; -unity-text-align: upper-center; margin-bottom: 20px;"/>
                     <ui:VisualElement name="ConfirmFlee" class="skill-item">
@@ -151,9 +129,7 @@
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
-            
         </ui:VisualElement>
-
         <ui:VisualElement name="BattleLogContainer" style="position: absolute; bottom: 0; right: 20px; width: 580px; height: 250px; background-color: rgba(0, 0, 0, 0.85); border-radius: 5px; padding: 10px; border-width: 2px; border-color: rgba(100, 100, 100, 0.8); margin-bottom: 5px;">
             <ui:Label text="Battle Log" name="LogTitle" class="font" style="font-size: 20px; -unity-text-align: upper-center; margin-bottom: 5px; flex-shrink: 0; border-bottom-width: 1px; border-color: rgba(100, 100, 100, 0.5); padding-bottom: 5px;"/>
             <ui:ScrollView name="LogScrollView" style="flex-grow: 1;">

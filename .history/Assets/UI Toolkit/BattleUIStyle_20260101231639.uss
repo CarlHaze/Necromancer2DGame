@@ -170,16 +170,15 @@
     -unity-text-align: middle-right;
 }
 
-
-/* Back Button Icon Style */
-.back-button-icon {
-    padding: 5px;
+/* Back Button Style */
+.back-button {
+    padding: 5px 10px;
+    margin-right: 10px;
     flex-shrink: 0;
 }
 
-.back-button-icon:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-    border-radius: 5px;
+.back-button:hover {
+    color: rgb(200, 200, 200);
 }
 
 /* Battle Log Styles */
