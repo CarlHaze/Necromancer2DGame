@@ -1,19 +1,9 @@
 :root {
 }
 
-/* Font Definitions */
 .font {
     -unity-font-definition: url("project://database/Assets/Fonts/Texturina-VariableFont_opsz,wght.ttf?fileID=12800000&guid=292a712311847e1458ab2886a50ee677&type=3#Texturina-VariableFont_opsz,wght");
     color: rgb(255, 255, 255);
-}
-
-/* Party Container Styles */
-.party-container {
-    border-width: 2px;
-    border-color: rgba(100, 100, 100, 0.5);
-    border-radius: 5px;
-    width: 190px;
-    flex-shrink: 0;
 }
 
 .creature-name {
@@ -33,7 +23,14 @@
     margin-bottom: 5px;
 }
 
-/* Portrait Styles */
+.party-container {
+    border-width: 2px;
+    border-color: rgba(100, 100, 100, 0.5);
+    border-radius: 5px;
+    width: 190px;
+    flex-shrink: 0;
+}
+
 .portrait {
     width: 60px;
     height: 60px;
@@ -43,7 +40,6 @@
     flex-shrink: 0;
 }
 
-/* HP/SP Bar Styles */
 .stat-bar {
     height: 10px;
     margin: 5px;
@@ -70,7 +66,83 @@
     background-color: rgb(50, 100, 200);
 }
 
-/* Command Item Styles (Grimoire Index Page) */
+.command-button {
+    background-color: rgba(80, 80, 80, 0.8);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border-width: 2px;
+    border-color: rgba(150, 150, 150, 0.8);
+    border-radius: 5px;
+    -unity-font-definition: url("project://database/Assets/Fonts/Texturina-VariableFont_opsz,wght.ttf?fileID=12800000&guid=292a712311847e1458ab2886a50ee677&type=3#Texturina-VariableFont_opsz,wght");
+}
+
+.command-button:hover {
+    background-color: rgba(120, 120, 120, 0.9);
+    border-color: rgb(200, 200, 200);
+}
+
+.command-button:active {
+    background-color: rgba(60, 60, 60, 0.9);
+}
+
+.skill-item {
+    flex-direction: row;
+    height: 60px;
+    background-color: rgba(20, 20, 20, 0.9);
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-color: rgba(60, 60, 60, 0.8);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.skill-item:hover {
+    background-color: rgba(50, 50, 50, 0.9);
+}
+
+/* Selected state - you'll toggle this class in code */
+.skill-item-selected {
+    border-width: 2px;
+    border-color: rgb(200, 50, 50);
+    background-color: rgba(40, 40, 40, 0.9);
+}
+
+.skill-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-right: 15px;
+    background-color: rgba(60, 60, 60, 0.5);
+    border-radius: 3px;
+}
+
+.skill-name {
+    font-size: 18px;
+    flex-grow: 1;
+    -unity-text-align: middle-left;
+    color: rgb(255, 255, 255);
+}
+
+.skill-type {
+    font-size: 16px;
+    color: rgb(150, 150, 150);
+    margin-right: 30px;
+    flex-shrink: 0;
+    min-width: 80px;
+}
+
+.skill-cost {
+    font-size: 18px;
+    color: rgb(255, 200, 100);
+    flex-shrink: 0;
+    min-width: 60px;
+    -unity-text-align: middle-right;
+}
+
 .command-item {
     flex-direction: row;
     height: 60px;
@@ -110,73 +182,4 @@
     flex-grow: 1;
     -unity-text-align: middle-left;
     color: rgb(255, 255, 255);
-}
-
-/* Skill Item Styles (Attack/Summon/Item Pages) */
-.skill-item {
-    flex-direction: row;
-    height: 60px;
-    background-color: rgba(20, 20, 20, 0.9);
-    border-width: 0;
-    border-bottom-width: 1px;
-    border-color: rgba(60, 60, 60, 0.8);
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.skill-item:hover {
-    background-color: rgba(50, 50, 50, 0.9);
-}
-
-.skill-item-selected {
-    border-width: 2px;
-    border-color: rgb(200, 50, 50);
-    background-color: rgba(40, 40, 40, 0.9);
-}
-
-.skill-icon {
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
-    margin-right: 15px;
-    background-color: rgba(60, 60, 60, 0.5);
-    border-radius: 3px;
-}
-
-.skill-name {
-    font-size: 18px;
-    flex-grow: 1;
-    -unity-text-align: middle-left;
-    color: rgb(255, 255, 255);
-}
-
-.skill-type {
-    font-size: 16px;
-    color: rgb(150, 150, 150);
-    margin-right: 30px;
-    flex-shrink: 0;
-    min-width: 80px;
-}
-
-.skill-cost {
-    font-size: 18px;
-    color: rgb(255, 200, 100);
-    flex-shrink: 0;
-    min-width: 60px;
-    -unity-text-align: middle-right;
-}
-
-/* Back Button Style */
-.back-button {
-    padding: 5px 10px;
-    margin-right: 10px;
-    flex-shrink: 0;
-}
-
-.back-button:hover {
-    color: rgb(200, 200, 200);
 }
