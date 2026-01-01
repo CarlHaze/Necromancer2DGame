@@ -1,0 +1,35 @@
+:root {
+}
+
+.font {
+    -unity-font-definition: url("project://database/Assets/Fonts/Texturina-VariableFont_opsz,wght.ttf?fileID=12800000&guid=292a712311847e1458ab2886a50ee677&type=3#Texturina-VariableFont_opsz,wght");
+    color: rgb(255, 255, 255);
+}
+
+.creature-name {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.level-text {
+    font-size: 16px;
+}
+
+.stat-text {
+    font-size: 16px;
+}
+
+.party-container {
+    border-width: 2px;
+    border-color: rgba(100, 100, 100, 0.5);
+    border-radius: 5px;
+}
+
+.portrait {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(50, 50, 50);
+    margin: 5px;
+    align-self: center;
+    flex-shrink: 0;
+}

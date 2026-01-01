@@ -1,0 +1,81 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/BattleUIStyle.uss?fileID=7433441132597879392&amp;guid=36517001232700b409a06fd4941b512e&amp;type=3#BattleUIStyle"/>
+    <ui:VisualElement name="Container" style="flex-grow: 1; position: relative;">
+        <ui:VisualElement name="TurnOrderContainer" style="flex-grow: 1; align-self: center; width: 50%; height: 80px; position: absolute; top: 0; background-color: rgba(0, 0, 0, 0.59); padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 20px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;">
+            <ui:VisualElement name="Portrait" class="portrait" style="flex-grow: 1; width: 60px; height: 60px; background-color: rgb(255, 255, 255); margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-left-color: rgb(25, 43, 212); border-right-color: rgb(25, 43, 212); border-top-color: rgb(25, 43, 212); border-bottom-color: rgb(25, 43, 212);"/>
+        </ui:VisualElement>
+        
+        <ui:VisualElement name="BottomUIContainer" style="flex-grow: 0; bottom: 0; position: absolute; width: 600px; height: 250px; left: 120px; flex-direction: row; justify-content: space-between;">
+            <ui:VisualElement name="Party1Container" class="party-container" style="flex-grow: 1; background-color: rgba(41, 162, 144, 0.64); margin: 5px;">
+                <ui:VisualElement name="Portrait" class="portrait" style="background-image: url('project://database/Assets/PlaceHolderArt/Skulls/basicSkullGrey.png'); -unity-background-scale-mode: scale-to-fit;"/>
+                <ui:Label text="Rattlebones" name="CreatureName" class="font creature-name" style="-unity-text-align: middle-center; margin-bottom: 5px;"/>
+                <ui:Label text="Lvl: 12" name="Level" class="font level-text" style="margin-left: 5px;"/>
+                
+                
+                <ui:VisualElement name="HPBar" class="stat-bar hp-bar">
+                    <ui:VisualElement name="HPFill" class="bar-fill hp-fill" style="width: 75%;"/>
+                </ui:VisualElement>
+                <ui:Label text="HP: 45/60" name="HPText" class="font stat-text" style="margin-left: 5px;"/>
+
+
+                <ui:VisualElement name="SPBar" class="stat-bar sp-bar">
+                    <ui:VisualElement name="SPFill" class="bar-fill sp-fill" style="width: 50%;"/>
+                </ui:VisualElement>
+                <ui:Label text="SP: 30/60" name="SPText" class="font stat-text" style="margin-left: 5px;"/>
+                
+            </ui:VisualElement>
+            <ui:VisualElement name="Party2Container" class="party-container" style="flex-grow: 1; background-color: rgba(136, 0, 0, 0.52); margin: 5px;">
+                <ui:VisualElement name="Portrait" class="portrait" style="background-image: url('project://database/Assets/PlaceHolderArt/Skulls/basicSkullBlue.png'); -unity-background-scale-mode: scale-to-fit;"/>
+                <ui:Label text="Rot Walker" name="CreatureName" class="font creature-name" style="-unity-text-align: middle-center; margin-bottom: 5px;"/>
+                <ui:Label text="Lvl: 11" name="Level" class="font level-text" style="margin-left: 5px;"/>
+
+                <ui:VisualElement name="HPBar" class="stat-bar hp-bar">
+                    <ui:VisualElement name="HPFill" class="bar-fill hp-fill" style="width: 75%;"/>
+                </ui:VisualElement>
+                <ui:Label text="HP: 45/60" name="HPText" class="font stat-text" style="margin-left: 5px;"/>
+
+              
+                <ui:VisualElement name="SPBar" class="stat-bar sp-bar">
+                    <ui:VisualElement name="SPFill" class="bar-fill sp-fill" style="width: 50%;"/>
+                </ui:VisualElement>
+                <ui:Label text="SP: 30/60" name="SPText" class="font stat-text" style="margin-left: 5px;"/>
+
+                
+            </ui:VisualElement>
+            <ui:VisualElement name="Party3Container" class="party-container" style="flex-grow: 1; background-color: rgba(0, 11, 219, 0.32); margin: 5px;">
+                <ui:VisualElement name="Portrait" class="portrait" style="background-image: url('project://database/Assets/PlaceHolderArt/Skulls/basicSkullRed.png'); -unity-background-scale-mode: scale-to-fit;"/>
+                <ui:Label text="Grave Stalker" name="CreatureName" class="font creature-name" style="-unity-text-align: middle-center; margin-bottom: 5px;"/>
+                <ui:Label text="Lvl: 13" name="Level" class="font level-text" style="margin-left: 5px;"/>
+
+                <ui:VisualElement name="HPBar" class="stat-bar hp-bar">
+                    <ui:VisualElement name="HPFill" class="bar-fill hp-fill" style="width: 75%;"/>
+                </ui:VisualElement>
+                <ui:Label text="HP: 45/60" name="HPText" class="font stat-text" style="margin-left: 5px;"/>
+
+
+                <ui:VisualElement name="SPBar" style="height: 10px; background-color: rgb(0, 0, 100); margin: 5px;">
+                    <ui:VisualElement name="SPFill" style="background-color: rgb(50, 100, 200); width: 66%; height: 100%;"/>
+                </ui:VisualElement>
+                <ui:Label text="SP: 40/60" name="SPText" class="font stat-text" style="margin-left: 5px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        
+        <ui:VisualElement name="CommandContainer" style="position: absolute; bottom: 0; right: 120px; width: 400px; height: 250px; background-color: rgba(0, 0, 0, 0.65); border-radius: 5px; padding: 10px;">
+            <ui:Label text="Grimoire of Command" name="TitleLabel" class="font" style="font-size: 20px; -unity-text-align: upper-center; margin-bottom: 10px;"/>
+            
+            <ui:VisualElement style="flex-direction: row; flex-grow: 1; justify-content: space-between;">
+                <!-- Left Column -->
+                <ui:VisualElement style="flex-grow: 1; margin-right: 5px;">
+                    <ui:Button text="ATTACK" name="AttackButton" class="command-button" style="flex-grow: 1; margin-bottom: 10px;"/>
+                    <ui:Button text="SUMMON" name="SummonButton" class="command-button" style="flex-grow: 1;"/>
+                </ui:VisualElement>
+                
+                <!-- Right Column -->
+                <ui:VisualElement style="flex-grow: 1; margin-left: 5px;">
+                    <ui:Button text="ITEM" name="ItemButton" class="command-button" style="flex-grow: 1; margin-bottom: 10px;"/>
+                    <ui:Button text="FLEE" name="FleeButton" class="command-button" style="flex-grow: 1;"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

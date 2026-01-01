@@ -17,11 +17,17 @@
 .header {
     align-self: center;
     margin-top: 25px;
-    color: rgb(255, 255, 255);
-    font-size: 50px;
+    color: rgb(214, 229, 107);
+    font-size: 78px;
     -unity-font-definition: url("project://database/Assets/Fonts/Creepster-Regular.ttf?fileID=12800000&guid=6fc664735c4d3fc49ac7736c78d9d384&type=3#Creepster-Regular");
+    -unity-text-outline-width: 1px;
+    -unity-text-outline-color: rgb(255, 255, 255);
 }
 
 .button:hover {
     background-image: url("project://database/Assets/UI%20Toolkit/UI%20Assets/button%20wide%20hover.png?fileID=2800000&guid=18b0bbddfa501274997ffaba30d68048&type=3#button wide hover");
+}
+
+.button:active {
+    background-image: url("project://database/Assets/UI%20Toolkit/UI%20Assets/button%20wide%20clicked.png?fileID=2800000&guid=213eb8dbeb5a86249a32c2418ada36eb&type=3#button wide clicked");
 }

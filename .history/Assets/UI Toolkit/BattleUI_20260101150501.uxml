@@ -1,0 +1,10 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/BattleUIStyle.uss?fileID=7433441132597879392&amp;guid=36517001232700b409a06fd4941b512e&amp;type=3#BattleUIStyle"/>
+    <ui:VisualElement name="Container" style="flex-grow: 1;">
+        <ui:VisualElement name="BottomUIContainer" style="flex-grow: 1; bottom: 0; position: absolute; width: 600px; height: 250px; left: 220px;">
+            <ui:VisualElement name="Party1Container" style="flex-grow: 1; width: 200px; background-color: rgba(0, 0, 0, 0.64); align-self: flex-start; height: 100%;"/>
+            <ui:VisualElement name="Party2Container" style="flex-grow: 1; width: 200px; align-self: center; height: 100%; background-color: rgba(136, 0, 0, 0.52); flex-direction: column;"/>
+            <ui:VisualElement name="Party3Container" style="flex-grow: 1; align-self: flex-end; width: 200px; height: 100%; background-color: rgba(0, 11, 219, 0.32);"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

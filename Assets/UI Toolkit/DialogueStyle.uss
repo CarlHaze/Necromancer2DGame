@@ -1,0 +1,8 @@
+:root {
+}
+
+.text {
+    -unity-font-definition: url("project://database/Assets/Fonts/Texturina-VariableFont_opsz,wght.ttf?fileID=12800000&guid=292a712311847e1458ab2886a50ee677&type=3#Texturina-VariableFont_opsz,wght");
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}

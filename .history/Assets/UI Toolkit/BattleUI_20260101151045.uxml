@@ -1,0 +1,17 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/BattleUIStyle.uss?fileID=7433441132597879392&amp;guid=36517001232700b409a06fd4941b512e&amp;type=3#BattleUIStyle"/>
+    <ui:VisualElement name="Container" style="flex-grow: 1;">
+        <ui:VisualElement name="BottomUIContainer" style="flex-grow: 0; bottom: 0; position: absolute; width: 600px; height: 250px; left: 220px; flex-direction: row; justify-content: space-between;">
+            <ui:VisualElement name="Party1Container" class="party-container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.64); margin: 5px;">
+                    <ui:VisualElement name="Portrait" style="width: 60px; height: 60px; background-color: rgb(50, 50, 50); margin: 5px; align-self: center;"/>
+                <!-- Party member 1 stats will go here -->
+            </ui:VisualElement>
+            <ui:VisualElement name="Party2Container" class="party-container" style="flex-grow: 1; background-color: rgba(136, 0, 0, 0.52); margin: 5px;">
+                <!-- Party member 2 stats will go here -->
+            </ui:VisualElement>
+            <ui:VisualElement name="Party3Container" class="party-container" style="flex-grow: 1; background-color: rgba(0, 11, 219, 0.32); margin: 5px;">
+                <!-- Party member 3 stats will go here -->
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
