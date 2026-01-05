@@ -10,8 +10,7 @@ namespace NecromancersRising.Battle
     {
         [SerializeField] private UndeadData _undeadData;
         [SerializeField] private MonsterHPBar _hpBar;
-
-        private BattleUIController _uiController;
+        
         private int _currentHP;
         private int _currentSP;
         private Dictionary<string, IStatusEffect> _activeStatusEffects = new Dictionary<string, IStatusEffect>();
@@ -78,13 +77,9 @@ namespace NecromancersRising.Battle
 
             _currentHP = Mathf.Max(0, _currentHP - actualDamage);
             
-            UpdateHPBar();
+            Debug.Log($"{EntityName} took {actualDamage} damage. HP: {_currentHP}/{MaxHP}"); // Add this for debugging
             
-            // Update party UI if this is a player unit
-            if (_uiController != null)
-            {
-                _uiController.UpdatePartyMemberDisplay(this);
-            }
+            UpdateHPBar();
             
             if (IsDead)
             {
@@ -105,15 +100,9 @@ namespace NecromancersRising.Battle
         }
 
         public void ConsumeSP(int amount)
-            {
-                CurrentSP = Mathf.Max(0, CurrentSP - amount);
-                
-                // Update party UI when SP changes
-                if (_uiController != null)
-                {
-                    _uiController.UpdatePartyMemberDisplay(this);
-                }
-            }
+        {
+            CurrentSP = Mathf.Max(0, CurrentSP - amount);
+        }
 
         public void ApplyStatusEffect(IStatusEffect statusEffect)
         {
@@ -173,14 +162,5 @@ namespace NecromancersRising.Battle
         {
             Debug.Log($"{EntityName} has been defeated!");
         }
-
-        public void SetUIController(BattleUIController uiController)
-        {
-            _uiController = uiController;
-        }
-
-
-
-
     }
 }

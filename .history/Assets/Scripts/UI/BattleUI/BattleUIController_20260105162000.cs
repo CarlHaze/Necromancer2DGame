@@ -290,45 +290,6 @@ namespace NecromancersRising.UI
             }
         }
 
-        // Add this new method to update a specific party member's display
-        public void UpdatePartyMemberDisplay(BattleEntity member)
-        {
-            if (!_partyUIElements.ContainsKey(member))
-            {
-                return; // This entity doesn't have a UI element
-            }
-            
-            var container = _partyUIElements[member];
-            
-            // Update HP text and bar
-            var hpText = container.Q<Label>("HPText");
-            if (hpText != null)
-            {
-                hpText.text = $"HP: {member.CurrentHP}/{member.MaxHP}";
-            }
-            
-            var hpFill = container.Q<VisualElement>("HPFill");
-            if (hpFill != null)
-            {
-                float hpPercent = (float)member.CurrentHP / member.MaxHP;
-                hpFill.style.width = Length.Percent(hpPercent * 100);
-            }
-            
-            // Update SP text and bar
-            var spText = container.Q<Label>("SPText");
-            if (spText != null)
-            {
-                spText.text = $"SP: {member.CurrentSP}/{member.MaxSP}";
-            }
-            
-            var spFill = container.Q<VisualElement>("SPFill");
-            if (spFill != null)
-            {
-                float spPercent = (float)member.CurrentSP / member.MaxSP;
-                spFill.style.width = Length.Percent(spPercent * 100);
-            }
-        }
-
         private VisualElement CreatePartyMemberUI(BattleEntity member, int index)
         {
             // Container

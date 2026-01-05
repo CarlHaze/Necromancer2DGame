@@ -78,13 +78,9 @@ namespace NecromancersRising.Battle
 
             _currentHP = Mathf.Max(0, _currentHP - actualDamage);
             
-            UpdateHPBar();
+            Debug.Log($"{EntityName} took {actualDamage} damage. HP: {_currentHP}/{MaxHP}"); // Add this for debugging
             
-            // Update party UI if this is a player unit
-            if (_uiController != null)
-            {
-                _uiController.UpdatePartyMemberDisplay(this);
-            }
+            UpdateHPBar();
             
             if (IsDead)
             {
@@ -105,15 +101,9 @@ namespace NecromancersRising.Battle
         }
 
         public void ConsumeSP(int amount)
-            {
-                CurrentSP = Mathf.Max(0, CurrentSP - amount);
-                
-                // Update party UI when SP changes
-                if (_uiController != null)
-                {
-                    _uiController.UpdatePartyMemberDisplay(this);
-                }
-            }
+        {
+            CurrentSP = Mathf.Max(0, CurrentSP - amount);
+        }
 
         public void ApplyStatusEffect(IStatusEffect statusEffect)
         {

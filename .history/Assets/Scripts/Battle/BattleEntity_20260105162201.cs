@@ -104,16 +104,16 @@ namespace NecromancersRising.Battle
             CurrentSP = Mathf.Min(MaxSP, CurrentSP + amount);
         }
 
-        public void ConsumeSP(int amount)
+      public void ConsumeSP(int amount)
+        {
+            CurrentSP = Mathf.Max(0, CurrentSP - amount);
+            
+            // Update party UI when SP changes
+            if (_uiController != null)
             {
-                CurrentSP = Mathf.Max(0, CurrentSP - amount);
-                
-                // Update party UI when SP changes
-                if (_uiController != null)
-                {
-                    _uiController.UpdatePartyMemberDisplay(this);
-                }
+                _uiController.UpdatePartyMemberDisplay(this);
             }
+        }
 
         public void ApplyStatusEffect(IStatusEffect statusEffect)
         {

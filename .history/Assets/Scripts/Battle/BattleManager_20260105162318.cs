@@ -59,7 +59,6 @@ namespace NecromancersRising.Battle
             CalculateTurnOrder();
             StartNextTurn();
         }
-        
         private void CalculateTurnOrder()
         {
             _turnOrder.Clear();
