@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UIElements;
-using UnityEngine.InputSystem; // Add this
 using System.Collections.Generic;
 
 namespace NecromancersRising.UI
@@ -22,7 +21,7 @@ namespace NecromancersRising.UI
         private List<MonsterHPBar> _activeHPBars = new List<MonsterHPBar>();
 
         [Header("Test Status Effect Icons")]
-        [SerializeField] private Sprite[] testStatusIcons;
+        [SerializeField] private Sprite[] testStatusIcons; // Just drag a bunch of icons here
 
         private void OnEnable()
         {
@@ -49,18 +48,14 @@ namespace NecromancersRising.UI
 
         private void Update()
         {
-            // Use new Input System instead of old Input class
-            var keyboard = Keyboard.current;
-            if (keyboard == null) return;
-
             // Press T to test adding random status icons
-            if (keyboard.tKey.wasPressedThisFrame)
+            if (Input.GetKeyDown(KeyCode.T))
             {
                 TestAddStatusIcons();
             }
             
             // Press R to remove all status icons
-            if (keyboard.rKey.wasPressedThisFrame)
+            if (Input.GetKeyDown(KeyCode.R))
             {
                 TestRemoveStatusIcons();
             }
@@ -81,10 +76,12 @@ namespace NecromancersRising.UI
 
         private void SetupBackButtons()
         {
+            // Find all back buttons - they're now VisualElements, not Labels
             var backButtons = _root.Query<VisualElement>(name: "BackButton").ToList();
             
             foreach (var backButton in backButtons)
             {
+                // Make sure we're not in the CommandPage
                 if (backButton.parent?.name != "CommandPage")
                 {
                     backButton.RegisterCallback<ClickEvent>(evt => ShowPage(_commandPage));
@@ -108,12 +105,14 @@ namespace NecromancersRising.UI
 
         private void ShowPage(VisualElement pageToShow)
         {
+            // Hide all pages
             _commandPage.style.display = DisplayStyle.None;
             _attackPage.style.display = DisplayStyle.None;
             _summonPage.style.display = DisplayStyle.None;
             _itemPage.style.display = DisplayStyle.None;
             _fleePage.style.display = DisplayStyle.None;
             
+            // Show requested page
             pageToShow.style.display = DisplayStyle.Flex;
             
             Debug.Log($"Showing page: {pageToShow.name}");
@@ -121,15 +120,19 @@ namespace NecromancersRising.UI
 
         private void SelectSkill(VisualElement skillItem)
         {
+            // Remove selection from previously selected skill
             if (_currentSelectedSkill != null)
             {
                 _currentSelectedSkill.RemoveFromClassList("skill-item-selected");
             }
             
+            // Add selection to new skill
             skillItem.AddToClassList("skill-item-selected");
             _currentSelectedSkill = skillItem;
             
             Debug.Log($"Selected skill: {skillItem.name}");
+            
+            // Here you would execute the skill
         }
 
         private void TestAddStatusIcons()
@@ -140,8 +143,10 @@ namespace NecromancersRising.UI
                 return;
             }
 
+            // Add random icons to each enemy
             foreach (var hpBar in _activeHPBars)
             {
+                // Add 1-3 random status effects
                 int numEffects = Random.Range(1, 4);
                 
                 for (int i = 0; i < numEffects; i++)
@@ -168,17 +173,22 @@ namespace NecromancersRising.UI
 
         private void InitializeMonsterHPBars()
         {
+            // Find all MonsterHPBar components in the scene
             var hpBars = FindObjectsByType<MonsterHPBar>(FindObjectsSortMode.None);
             
             Debug.Log($"Found {hpBars.Length} HP bars to initialize");
             
             foreach (var hpBar in hpBars)
             {
+                // The script is directly on the monster, so use its own transform
                 Transform monsterTransform = hpBar.transform;
                 
                 Debug.Log($"Initializing HP bar for: {monsterTransform.name}");
                 
+                // Initialize the HP bar with the UI container
                 hpBar.Initialize(_hpBarsContainer, monsterTransform);
+                
+                // Set initial HP
                 hpBar.SetHP(100, 100);
                 
                 _activeHPBars.Add(hpBar);
