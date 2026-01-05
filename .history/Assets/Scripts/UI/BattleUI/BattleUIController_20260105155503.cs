@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
-using NecromancersRising.Battle;
 
 namespace NecromancersRising.UI
 {
