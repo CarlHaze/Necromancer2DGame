@@ -1,0 +1,10 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/BattleUIStyle.uss?fileID=7433441132597879392&amp;guid=36517001232700b409a06fd4941b512e&amp;type=3#BattleUIStyle"/>
+    <ui:VisualElement name="MonsterHPBarContainer" class="monster-hp-container" style="background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="StatusIconsContainer" class="status-icons-row"/>
+        <ui:VisualElement name="HPBarBackground" class="monster-hp-bar-bg">
+            <ui:VisualElement name="HPBarFill" class="monster-hp-bar-fill" style="width: 100%;"/>
+        </ui:VisualElement>
+        <ui:Label text="Enemy Ghost" name="MonsterName" class="font monster-name-label" style="padding-top: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"/>
+    </ui:VisualElement>
+</ui:UXML>

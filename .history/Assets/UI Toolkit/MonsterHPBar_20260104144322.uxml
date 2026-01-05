@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
+>
+    <Style src="project://database/Assets/UI%20Toolkit/BattleUIStyle.uss?fileID=7433441132597879392&amp;guid=36517001232700b409a06fd4941b512e&amp;type=3#BattleUIStyle"/>
+    
+    <ui:VisualElement name="MonsterHPBarContainer" class="monster-hp-container">
+        <!-- Status Effect Icons Row -->
+        <ui:VisualElement name="StatusIconsContainer" class="status-icons-row">
+            <!-- Status icons will be added dynamically here -->
+        </ui:VisualElement>
+        
+        <!-- HP Bar -->
+        <ui:VisualElement name="HPBarBackground" class="monster-hp-bar-bg">
+            <ui:VisualElement name="HPBarFill" class="monster-hp-bar-fill" style="width: 100%;"/>
+        </ui:VisualElement>
+        
+        <!-- Optional: Monster Name Label -->
+        <ui:Label text="Enemy Ghost" name="MonsterName" class="font monster-name-label"/>
+    </ui:VisualElement>
+
+    
+</ui:UXML>

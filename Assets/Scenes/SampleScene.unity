@@ -129,8 +129,9 @@ GameObject:
   m_Component:
   - component: {fileID: 44198088}
   - component: {fileID: 44198087}
+  - component: {fileID: 44198089}
   m_Layer: 0
-  m_Name: Square (4)
+  m_Name: Enemy2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -210,6 +211,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &44198089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44198086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be9f8eaa2bfa9945abbc16ad63a53ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NecromancersRising.UI.MonsterHPBar
+  _targetMonster: {fileID: 0}
+  _offset: {x: 0, y: 0.8, z: 0}
+  _monsterName: Enemy
 --- !u!1 &114272499
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,8 +733,9 @@ GameObject:
   m_Component:
   - component: {fileID: 632424426}
   - component: {fileID: 632424425}
+  - component: {fileID: 632424427}
   m_Layer: 0
-  m_Name: Square (5)
+  m_Name: Enemy3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -798,6 +815,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &632424427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632424424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be9f8eaa2bfa9945abbc16ad63a53ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NecromancersRising.UI.MonsterHPBar
+  _targetMonster: {fileID: 0}
+  _offset: {x: 0, y: 0.8, z: 0}
+  _monsterName: Enemy
 --- !u!1 &777333271
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,7 +846,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &777333272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -857,8 +889,9 @@ GameObject:
   m_Component:
   - component: {fileID: 865919136}
   - component: {fileID: 865919135}
+  - component: {fileID: 865919137}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Minion1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -938,6 +971,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &865919137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865919134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be9f8eaa2bfa9945abbc16ad63a53ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NecromancersRising.UI.MonsterHPBar
+  _targetMonster: {fileID: 0}
+  _offset: {x: 0, y: 0.8, z: 0}
+  _monsterName: Enemy
 --- !u!1 &919576049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,8 +1051,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1162142584}
   - component: {fileID: 1162142583}
+  - component: {fileID: 1162142585}
   m_Layer: 0
-  m_Name: Square (3)
+  m_Name: Enemy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1084,6 +1133,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1162142585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162142582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be9f8eaa2bfa9945abbc16ad63a53ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NecromancersRising.UI.MonsterHPBar
+  _targetMonster: {fileID: 0}
+  _offset: {x: 0, y: 0.8, z: 0}
+  _monsterName: Enemy
 --- !u!1 &1189284129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,8 +1375,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1581583719}
   - component: {fileID: 1581583718}
+  - component: {fileID: 1581583720}
   m_Layer: 0
-  m_Name: Square (2)
+  m_Name: Minion3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1392,6 +1457,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1581583720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581583717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be9f8eaa2bfa9945abbc16ad63a53ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NecromancersRising.UI.MonsterHPBar
+  _targetMonster: {fileID: 0}
+  _offset: {x: 0, y: 0.8, z: 0}
+  _monsterName: Enemy
 --- !u!1 &1655338637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1815,8 +1895,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1895573448}
   - component: {fileID: 1895573447}
+  - component: {fileID: 1895573449}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: Minion2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1896,6 +1977,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1895573449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895573446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be9f8eaa2bfa9945abbc16ad63a53ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NecromancersRising.UI.MonsterHPBar
+  _targetMonster: {fileID: 0}
+  _offset: {x: 0, y: 0.8, z: 0}
+  _monsterName: Enemy
 --- !u!1 &1936670902
 GameObject:
   m_ObjectHideFlags: 0
@@ -2056,8 +2152,8 @@ SceneRoots:
   - {fileID: 207775827}
   - {fileID: 1936670906}
   - {fileID: 865919136}
-  - {fileID: 1162142584}
   - {fileID: 1895573448}
-  - {fileID: 44198088}
   - {fileID: 1581583719}
+  - {fileID: 1162142584}
+  - {fileID: 44198088}
   - {fileID: 632424426}

@@ -46,21 +46,17 @@ namespace NecromancersRising.UI
         private void InitializeMonsterHPBars()
         {
             // Find all MonsterHPBar components in the scene
-            var hpBars = FindObjectsByType<MonsterHPBar>(FindObjectsSortMode.None);
-            
-            Debug.Log($"Found {hpBars.Length} HP bars to initialize");
+            var hpBars = FindObjectsOfType<MonsterHPBar>();
             
             foreach (var hpBar in hpBars)
             {
-                // The script is directly on the monster, so use its own transform
-                Transform monsterTransform = hpBar.transform;
-                
-                Debug.Log($"Initializing HP bar for: {monsterTransform.name}");
+                // Get the monster transform (parent of the HPBar component)
+                var monsterTransform = hpBar.transform.parent;
                 
                 // Initialize the HP bar with the UI container
                 hpBar.Initialize(_hpBarsContainer, monsterTransform);
                 
-                // Set initial HP
+                // Set initial HP (you can customize this)
                 hpBar.SetHP(100, 100);
                 
                 _activeHPBars.Add(hpBar);

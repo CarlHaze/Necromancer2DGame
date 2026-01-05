@@ -222,36 +222,36 @@
 
 /* Monster HP Bar Styles */
 .monster-hp-container {
-    width: 100px;
-    background-color: transparent;
-    border-radius: 0;
-    padding: 0;
-    border-width: 0;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 5px;
+    border-width: 1px;
+    border-color: rgba(100, 100, 100, 0.8);
 }
 
 .status-icons-row {
     flex-direction: row;
-    height: auto; /* Changed from 0 - will auto-size based on content */
-    margin-bottom: 2px; /* Small gap when icons are present */
+    height: 20px;
+    margin-bottom: 3px;
     justify-content: center;
     flex-wrap: wrap;
-    min-height: 0; /* Don't take space when empty */
 }
 
 .status-icon {
-    width: 16px; /* Changed from 18px to match your icons */
-    height: 16px; /* Changed from 18px to match your icons */
+    width: 18px;
+    height: 18px;
     margin: 1px;
     flex-shrink: 0;
-    border-radius: 0; /* Remove rounded corners for pixel art */
-    background-color: transparent; /* Remove background so icon shows clearly */
+    background-color: rgba(60, 60, 60, 0.5);
+    border-radius: 2px;
 }
 
 .monster-hp-bar-bg {
     height: 8px;
     background-color: rgb(60, 0, 0);
     border-radius: 3px;
-    margin-bottom: 0; /* Changed from 1px - no gap at all */
+    margin-bottom: 3px;
 }
 
 .monster-hp-bar-fill {
@@ -261,9 +261,7 @@
 }
 
 .monster-name-label {
-    font-size: 15px;
+    font-size: 10px;
     -unity-text-align: middle-center;
     color: rgb(200, 200, 200);
-    margin-top: 0; /* Ensure no top margin */
-    padding-top: 0; /* Ensure no top padding */
 }
