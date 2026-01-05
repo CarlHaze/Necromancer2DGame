@@ -17,10 +17,9 @@ namespace NecromancersRising.UI
         
         private Dictionary<string, VisualElement> _activeStatusIcons = new Dictionary<string, VisualElement>();
 
-        public void Initialize(VisualElement hpBarsParent, Transform target, string monsterName)
+        public void Initialize(VisualElement hpBarsParent, Transform target)
         {
             _targetMonster = target;
-            _monsterName = monsterName; // Set the name first
             _mainCamera = Camera.main;
             
             // Create HP bar UI elements
@@ -45,7 +44,7 @@ namespace NecromancersRising.UI
             
             _hpBarContainer.Add(hpBarBg);
             
-            // Monster name label - use the passed in name
+            // Monster name label
             var nameLabel = new Label(_monsterName);
             nameLabel.AddToClassList("font");
             nameLabel.AddToClassList("monster-name-label");
@@ -81,7 +80,7 @@ namespace NecromancersRising.UI
                 _hpBarContainer.style.display = DisplayStyle.None;
             }
         }
-
+        
         public void SetMonsterName(string name)
         {
             _monsterName = name;

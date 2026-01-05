@@ -191,13 +191,9 @@ namespace NecromancersRising.UI
             {
                 Transform monsterTransform = hpBar.transform;
                 
-                // Get the BattleEntity to access the undead name
-                var battleEntity = monsterTransform.GetComponent<BattleEntity>();
-                string displayName = battleEntity != null ? battleEntity.Data.undeadName : monsterTransform.name;
+                Debug.Log($"Initializing HP bar for: {monsterTransform.name}");
                 
-                Debug.Log($"Initializing HP bar for: {monsterTransform.name} as {displayName}");
-                
-                hpBar.Initialize(_hpBarsContainer, monsterTransform, displayName);
+                hpBar.Initialize(_hpBarsContainer, monsterTransform);
                 hpBar.SetHP(100, 100);
                 
                 _activeHPBars.Add(hpBar);
@@ -265,104 +261,6 @@ namespace NecromancersRising.UI
             }
             
             Debug.Log($"Populated attack page with {moves.Count} moves");
-        }
-
-        public void UpdatePartyDisplay(List<BattleEntity> partyMembers)
-        {
-            // Get the bottom UI container
-            var bottomContainer = _root.Q<VisualElement>("BottomUIContainer");
-            if (bottomContainer == null)
-            {
-                Debug.LogWarning("BottomUIContainer not found!");
-                return;
-            }
-            
-            // Clear existing party containers
-            bottomContainer.Clear();
-            
-            // Create a party container for each member (max 3)
-            for (int i = 0; i < Mathf.Min(3, partyMembers.Count); i++)
-            {
-                var member = partyMembers[i];
-                var partyContainer = CreatePartyMemberUI(member, i);
-                bottomContainer.Add(partyContainer);
-            }
-        }
-
-        private VisualElement CreatePartyMemberUI(BattleEntity member, int index)
-        {
-            // Container
-            var container = new VisualElement();
-            container.AddToClassList("party-container");
-            container.name = $"Party{index + 1}Container";
-            
-            // Set background color based on index
-            Color[] colors = new Color[] 
-            {
-                new Color(0, 0.5f, 0.5f, 0.3f),  // Teal
-                new Color(0.5f, 0, 0, 0.3f),      // Red
-                new Color(0, 0, 0.5f, 0.3f)       // Blue
-            };
-            container.style.backgroundColor = colors[index];
-            
-            // Portrait
-            var portrait = new VisualElement();
-            portrait.AddToClassList("portrait");
-            if (member.Data.sprite != null)
-            {
-                portrait.style.backgroundImage = new StyleBackground(member.Data.sprite);
-                portrait.style.backgroundSize = new BackgroundSize(BackgroundSizeType.Contain);
-            }
-            container.Add(portrait);
-            
-            // Name and Level
-            var nameLabel = new Label(member.Data.undeadName);
-            nameLabel.AddToClassList("font");
-            nameLabel.AddToClassList("creature-name");
-            container.Add(nameLabel);
-            
-            var levelLabel = new Label($"Level: {12}"); // TODO: Get actual level
-            levelLabel.AddToClassList("font");
-            levelLabel.AddToClassList("level-text");
-            container.Add(levelLabel);
-            
-            // HP Bar
-            var hpText = new Label($"HP: {member.CurrentHP}/{member.MaxHP}");
-            hpText.name = "HPText";
-            hpText.AddToClassList("font");
-            hpText.AddToClassList("stat-text");
-            container.Add(hpText);
-            
-            var hpBar = new VisualElement();
-            hpBar.AddToClassList("stat-bar");
-            hpBar.AddToClassList("hp-bar");
-            var hpFill = new VisualElement();
-            hpFill.AddToClassList("bar-fill");
-            hpFill.AddToClassList("hp-fill");
-            hpFill.name = "HPFill";
-            hpFill.style.width = Length.Percent(100);
-            hpBar.Add(hpFill);
-            container.Add(hpBar);
-            
-            // SP Bar
-            var spText = new Label($"SP: {member.CurrentSP}/{member.MaxSP}");
-            spText.name = "SPText";
-            spText.AddToClassList("font");
-            spText.AddToClassList("stat-text");
-            container.Add(spText);
-            
-            var spBar = new VisualElement();
-            spBar.AddToClassList("stat-bar");
-            spBar.AddToClassList("sp-bar");
-            var spFill = new VisualElement();
-            spFill.AddToClassList("bar-fill");
-            spFill.AddToClassList("sp-fill");
-            spFill.name = "SPFill";
-            spFill.style.width = Length.Percent(100);
-            spBar.Add(spFill);
-            container.Add(spBar);
-            
-            return container;
         }
 
 

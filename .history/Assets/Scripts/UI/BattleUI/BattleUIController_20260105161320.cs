@@ -311,7 +311,7 @@ namespace NecromancersRising.UI
             if (member.Data.sprite != null)
             {
                 portrait.style.backgroundImage = new StyleBackground(member.Data.sprite);
-                portrait.style.backgroundSize = new BackgroundSize(BackgroundSizeType.Contain);
+                portrait.style.unityBackgroundScaleMode = ScaleMode.ScaleToFit;
             }
             container.Add(portrait);
             

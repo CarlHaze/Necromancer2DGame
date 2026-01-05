@@ -33,6 +33,7 @@ namespace NecromancersRising.Battle
             
             foreach (var entity in allEntities)
             {
+                // Categorize by tag or layer - for now, assume enemies have "Enemy" tag
                 if (entity.CompareTag("Enemy"))
                 {
                     _enemyParty.Add(entity);
@@ -45,13 +46,10 @@ namespace NecromancersRising.Battle
             
             Debug.Log($"Battle initialized: {_playerParty.Count} player units, {_enemyParty.Count} enemies");
             
-            // Update UI with party members
-            if (_uiController != null)
-            {
-                _uiController.UpdatePartyDisplay(_playerParty);
-            }
-            
+            // Calculate turn order
             CalculateTurnOrder();
+            
+            // Start first turn
             StartNextTurn();
         }
 
